@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* Customize project cards */
+    .project-card {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .project-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .svg-icon {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <section class="container py-5">
+    <h2 class="text-center mb-5 animate__animated animate__fadeInUp">My Projects</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col animate__animated animate__fadeInLeft">
+        <div class="card project-card h-100">
+          <img src="assets/imgs/neyoo.png" class="card-img-top project-img" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">NEYOO AND TEE TECH</h5>
+            <p class="card-text">I Developed a web application using CodeIgniter for a company specializing in CCTV installation and maintenance. The system streamlined customer management, service scheduling, and issue tracking, enhancing operational efficiency and improving service delivery</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp">
+        <div class="card project-card h-100">
+          <img src="assets/imgs/header.jpg" class="card-img-top project-img" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">E-LIBRARY</h5>
+            <p class="card-text">I Developed a web application using raw PHP for Fuoye mechanical department. The system streamlined student management, book scheduling, and tracking of student reading progress.</p>
+            <a href="https://github.com/joshuaolumoye/fuoyemechanicallibrary" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInRight">
+        <div class="card project-card h-100">
+          <img src="assets/imgs/header.jpg" class="card-img-top project-img" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">ONLINE VOTING</h5>
+            <p class="card-text">Developed a custom web application using raw PHP for the Fuoye Mechanical Department to streamline the student voting process. The system allowed for secure, real-time voting, automated result tabulation, and improved transparency in elections. It enhanced the voting experience by reducing manual effort and minimizing errors, ensuring a smooth and efficient process.</p>
+            <a href="https://github.com/joshuaolumoye/votingPlatform" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();  // Initialize animations
+  </script>
+</body>
+</html>
