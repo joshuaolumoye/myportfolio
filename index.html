@@ -81,7 +81,7 @@
                          with MySQL and MongoDB for efficient data management. With expertise across the entire
                          web development stack, I deliver scalable, feature-rich solutions tailored to meet diverse business needs.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <button id="downloadCvButton" class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -154,20 +154,20 @@
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
+                    <a href="past_works.html" class="portfolio-card">
+                        <img src="assets/imgs/frontend.jfif" class="portfolio-card-img"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>frontend development</h5>
-                                    <a href="past_works.html" class="font-weight-normal">Check my frontend past project</p>
+                                    <p class="font-weight-normal">Check my frontend past project</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                    <a href="past_works.html" class="portfolio-card">
+                        <img class="portfolio-card-img img-fluid" src="assets/imgs/backe.jfif" class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -178,8 +178,8 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                    <a href="past_works.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/fullstack.png" class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -334,3 +334,13 @@
 </body>
 
 </html>
+
+<script>
+  document.getElementById("downloadCvButton").addEventListener("click", function() {
+    // Create an anchor element and set the relative path to the file within your project folder
+    const link = document.createElement("a");
+    link.href = "Joshua_Resume.docx";  // This path is relative to your HTML file location
+    link.download = "";                // No filename specified; browser will use original file name
+    link.click();
+  });
+</script>

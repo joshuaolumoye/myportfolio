@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
-    /* Customize project cards */
+    /* Custom project card style */
     .project-card {
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
@@ -16,12 +16,23 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
     .project-img {
-      height: 200px;
+      height: 220px;
       object-fit: cover;
+      border-radius: 10px 10px 0 0;
     }
     .svg-icon {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
+      color: #ffffff;
+    }
+    /* Additional styling for the buttons */
+    .btn-view {
+      background-color: #007bff;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+    .btn-view:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -30,42 +41,108 @@
     <h2 class="text-center mb-5 animate__animated animate__fadeInUp">My Projects</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col animate__animated animate__fadeInLeft">
-        <div class="card project-card h-100">
-          <img src="assets/imgs/neyoo.png" class="card-img-top project-img" alt="Project 1">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/neyoo.png" class="card-img-top project-img" alt="NEYOO AND TEE TECH">
           <div class="card-body">
             <h5 class="card-title fw-bold">NEYOO AND TEE TECH</h5>
-            <p class="card-text">I Developed a web application using CodeIgniter for a company specializing in CCTV installation and maintenance. The system streamlined customer management, service scheduling, and issue tracking, enhancing operational efficiency and improving service delivery</p>
-            <a href="#" class="btn btn-primary">View Project</a>
+            <p class="card-text">Developed a web application using CodeIgniter for a CCTV company, optimizing customer and service management with features for scheduling and tracking.</p>
+            <a href="https://neyooandteetech.com/index.php" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Project
+            </a>
           </div>
         </div>
       </div>
       <div class="col animate__animated animate__fadeInUp">
-        <div class="card project-card h-100">
-          <img src="assets/imgs/header.jpg" class="card-img-top project-img" alt="Project 2">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/suitplus.png" class="card-img-top project-img" alt="E-Library">
           <div class="card-body">
-            <h5 class="card-title fw-bold">E-LIBRARY</h5>
-            <p class="card-text">I Developed a web application using raw PHP for Fuoye mechanical department. The system streamlined student management, book scheduling, and tracking of student reading progress.</p>
-            <a href="https://github.com/joshuaolumoye/fuoyemechanicallibrary" class="btn btn-primary">View Project</a>
+            <h5 class="card-title fw-bold">SUIT-PLUS</h5>
+            <p class="card-text">It’s a suit collection site where users can find the perfect suit for any occasion. Collaborated with other developers using React for the frontend.</p>
+            <a href="https://suitplus.org/" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Project
+            </a>
           </div>
         </div>
       </div>
       <div class="col animate__animated animate__fadeInRight">
-        <div class="card project-card h-100">
-          <img src="assets/imgs/header.jpg" class="card-img-top project-img" alt="Project 3">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/header.jpg" class="card-img-top project-img" alt="Online Voting Platform">
           <div class="card-body">
-            <h5 class="card-title fw-bold">ONLINE VOTING</h5>
-            <p class="card-text">Developed a custom web application using raw PHP for the Fuoye Mechanical Department to streamline the student voting process. The system allowed for secure, real-time voting, automated result tabulation, and improved transparency in elections. It enhanced the voting experience by reducing manual effort and minimizing errors, ensuring a smooth and efficient process.</p>
-            <a href="https://github.com/joshuaolumoye/votingPlatform" class="btn btn-primary">View Project</a>
+            <h5 class="card-title fw-bold">ONLINE VOTING PLATFORM</h5>
+            <p class="card-text">I developed a secure voting system for Fuoye's Mechanical Department using PHP to streamline student elections. Although the site is currently inactive because there's no upcoming election, the code is available in a private repository in my Github.</p>
+            <a href="https://github.com/joshuaolumoye/votingPlatform" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Github
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col animate__animated animate__fadeInLeft">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/fluxima.png" class="card-img-top project-img" alt="NEYOO AND TEE TECH">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">FLUXIMA</h5>
+            <p class="card-text">It's a streaming platform for the latest movies, tv shows and other entertainment programms, currently in development. Here’s the link to the private GitHub repository.</p>
+            <a href="https://github.com/joshuaolumoye/FluximaFrontend" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/fluximaback.jfif" class="card-img-top project-img" alt="Online Voting Platform">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">FLUXIMA BACKEND</h5>
+            <p class="card-text">I'am currently developing it with laravel, Here’s the link to the private GitHub repository.</p>
+            <a href="https://github.com/joshuaolumoye/fluxima-backend" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInRight">
+        <div class="card project-card h-100 shadow">
+          <img src="assets/imgs/vtu.png" class="card-img-top project-img" alt="E-Library">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">DATAWISE SOLUTION</h5>
+            <p class="card-text">A VTU platform for handling various subscriptions, built with Laravel and currently in development. Access the private GitHub repository link here.</p>
+            <a href="https://github.com/joshuaolumoye/fuoyemechanicallibrary" class="btn btn-view d-flex align-items-center">
+              <svg class="svg-icon me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.793 8 5.146 3.354a.5.5 0 1 1 .708-.708l5 5z"/>
+              </svg>
+              View Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
-    new WOW().init();  // Initialize animations
+    new WOW().init();
   </script>
 </body>
 </html>
